@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3b1eb531dc.js" crossorigin="anonymous"></script>
 
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
@@ -36,15 +37,68 @@
                 <a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Your Cart</a>
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
-                      <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                      <!-- <i class="fas fa-shopping-basket" ></i> -->
+                      <img src="/assets/cart.png" alt="" style="width : 3.5rem";>
+                      Your Basket
+                      <h5 id="offcanvasRightLabel">
+                      </h5>
                       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
+                      <!-- <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br> -->
+                      <div class="row">
+                        <div class="col">
+                          <p>Description</p>
+                        </div>
+                        <div class="col">
+                          <p>Quantity</p>
+                        </div>
+                        <div class="col">
+                          <p>Amount</p>
+                        </div>
+                        <hr>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="col">
+                          <p>Labrador</p>
+                        </div>
+                        <div class="col">
+                          <p>1</p>
+                        </div>
+                        <div class="col">
+                          <p>10000 INR</p>
+                        </div>
+                        <hr>
+                      </div>
+                      
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+
+                      <div class="row">
+                        
+                        <div class="col">
+                          <p>Total</p>
+                        </div>
+                        <div class="col">
+                          <p>12000 INR</p>
+                        </div>
+                        <hr>
+                      </div>
                     </div>
                   </div>
                 </li>
               
-
+              
               <li class="nav-item">
                 <a class="nav-link" href="#fav-section">Favourites</a>
               </li>
@@ -58,6 +112,25 @@
                       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
+                      <img src="/assets/cart.png" alt="" style="width : 3.5rem";>
+                      Your Basket
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <div class="row">
+                        <div class="col">
+                          <p>Description</p>
+                        </div>
+                        <div class="col">
+                          <p>Quantity</p>
+                        </div>
+                        <div class="col">
+                          <p>Amount</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
               </li>
@@ -71,13 +144,92 @@
       </nav>
       
       
-      
+      <div id="main-page">
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
           <h1 class="title">
             <br> <span>four-legged</span><br>world.
           </h1>
           <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia sapiente nobis.</p>
+
+          
+<div class="btn-group" role="group" aria-label="Basic outlined example">
+  <!-- <button type="button" class="btn btn-outline-primary" >Dogs</button> -->
+  
+  <button type="button" class="btn btn-outline-primary" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Dogs</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+  <div class="container">
+    <div class="row row-cols-auto">
+      <div class="col">
+        <div class="vertical-line"></div>
+        
+        <img class="img-icon" src="assets/breed.png" alt="">
+        <!-- <a href="#">Breed</a> -->
+        <input class="text-box" type="text" size="5" placeholder="Breed">
+      </div>
+      <div class="col">
+        <div class="vertical-line"></div>
+        <img class="img-icon" src="assets/age.png" alt="">
+        <input class="text-box" type="text" size="2" placeholder="Age">
+        <!-- <a href="#">Age</a> -->
+      </div>
+      <div class="col">
+        <img class="img-icon" src="assets/placeholder.png" alt="">
+        <input class="text-box" type="text" size="10" placeholder="Location">
+        <!-- <a href="#">Location</a> -->
+        <div class="vertical-line"></div>
+      </div>
+      <div class="col">
+        <!-- <a href="#">Search</a> -->
+        <button type="button" class="btn btn-primary Search-btn">Search</button>
+        <!-- <div class="vertical-line"></div> -->
+      </div>
+    </div>
+  </div>
+  </ul>
+  
+          
+  
+
+  <!-- <button type="button" class="btn btn-outline-primary">Cats</button> -->
+
+  <button type="button" class="btn btn-outline-primary" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Cats</button>
+  
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <div class="container">
+      <div class="row row-cols-auto">
+        <div class="col">
+          <div class="vertical-line"></div>
+          
+          <img class="img-icon" src="assets/breed.png" alt="">
+          <!-- <a href="#">Breed</a> -->
+          <input class="text-box" type="text" size="5" placeholder="Breed">
+        </div>
+        <div class="col">
+          <div class="vertical-line"></div>
+          <img class="img-icon" src="assets/age.png" alt="">
+          <input class="text-box" type="text" size="2" placeholder="Age">
+          <!-- <a href="#">Age</a> -->
+        </div>
+        <div class="col">
+          <img class="img-icon" src="assets/placeholder.png" alt="">
+          <input class="text-box" type="text" size="10" placeholder="Location">
+          <!-- <a href="#">Location</a> -->
+          <div class="vertical-line"></div>
+        </div>
+        <div class="col">
+          <!-- <a href="#">Search</a> -->
+          <button type="button" class="btn btn-primary Search-btn">Search</button>
+          <!-- <div class="vertical-line"></div> -->
+        </div>
+      </div>
+    </div>
+    </ul>
+  
+  <button type="button" class="btn btn-outline-primary">Other Pets</button>
+</div>
+        
+        
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="img-container_1">
@@ -97,115 +249,9 @@
       </div>
       </div>
       
-      <!-- <div class="row">
-        <div class="col">
-        <a href="#">Dogs</a> -->
-        <!-- <li>
-            <img src="assets/breed.png" alt="">
-            <a href="#">Breed</a>
-            <img src="assets/age.png" alt="">
-            <a href="#">Age</a>
-            <img src="assets/placeholder.png" alt="">
-            <a href="#">Location</a>
-            <button>Search</button>
-        </li> -->
-        <!-- </div>
-        <div class="col">
-        <a href="#">Cats</a> -->
-        <!-- <li>
-            <img src="assets/breed.png" alt="">
-            <a href="#">Breed</a>
-            <img src="assets/age.png" alt="">
-            <a href="#">Age</a>
-            <img src="assets/placeholder.png" alt="">
-            <a href="#">Location</a>
-            <button>Search</button>
-        </li> -->
-      <!-- </div>
-      <div class="col">
-        <a href="#">Other Pets</a> -->
-    <!-- <li>
-        <img src="assets/breed.png" alt="">
-        <a href="#">Breed</a>
-        <img src="assets/age.png" alt="">
-        <a href="#">Age</a>
-        <img src="assets/placeholder.png" alt="">
-        <a href="#">Location</a>
-        <button>Search</button>
-    </li> -->
-  <!-- </div>
-</ul>
-</div> -->
 
-<div class="btn-group" role="group" aria-label="Basic outlined example">
-  <!-- <button type="button" class="btn btn-outline-primary" >Dogs</button> -->
-  
-  <button type="button" class="btn btn-outline-primary" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Dogs</button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-  <div class="container">
-    <div class="row row-cols-auto">
-      <div class="col">
-        <img class="img-icon" src="assets/breed.png" alt="">
-        <a href="#">Breed</a>
-      </div>
-      <div class="col">
-        <img class="img-icon" src="assets/age.png" alt="">
-        <a href="#">Age</a>
-      </div>
-      <div class="col">
-        <img class="img-icon" src="assets/placeholder.png" alt="">
-        <a href="#">Location</a>
-      </div>
-      <div class="col">
-        <a href="#">Search</a>
-      </div>
-    </div>
-  </div>
-  </ul>
-  
-          
-  
 
-  <!-- <button type="button" class="btn btn-outline-primary">Cats</button> -->
-
-  <button type="button" class="btn btn-outline-primary" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Cats</button>
-  
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <div class="container">
-      <div class="row row-cols-auto">
-        <div class="col">
-          <img class="img-icon" src="assets/breed.png" alt="">
-          <a href="#">Breed</a>
-        </div>
-        <div class="col">
-          <img class="img-icon" src="assets/age.png" alt="">
-          <a href="#">Age</a>
-        </div>
-        <div class="col">
-          <img class="img-icon" src="assets/placeholder.png" alt="">
-          <a href="#">Location</a>
-        </div>
-        <div class="col">
-          <a href="#">Column</a>
-        </div>
-      </div>
-    </div>
-    </ul>
-  
-  <button type="button" class="btn btn-outline-primary">Other Pets</button>
-
-      <!-- <li>
-        <img src="assets/breed.png" alt="">
-        <a href="#">Breed</a>
-        <img src="assets/age.png" alt="">
-        <a href="#">Age</a>
-        <img src="assets/placeholder.png" alt="">
-        <a href="#">Location</a>
-        <button>Search</button>
-    </li> -->
-      
 </div>
-
 
 <section id="fav-section">
 
