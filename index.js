@@ -17,3 +17,5 @@ var home, adopted, vaccinated = rnd_gen();
 document.querySelector(".home").textContent = home;
 document.querySelector(".adopted").textContent = adopted;
 document.querySelector(".vaccinated").textContent = vaccinated;
+
+document.querySelector(".title_text").textContent = "Loved is a";
