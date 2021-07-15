@@ -12,7 +12,7 @@ function rnd_gen()
     return  home,adopted,vaccinated;
 }
 
-var home = rnd_gen(); //, adopted, vaccinated
+var home, adopted, vaccinated = rnd_gen();
 
 document.querySelector(".home").textContent = home;
 document.querySelector(".adopted").textContent = adopted;
